@@ -20,9 +20,16 @@
         "uri": "/sap/opu/odata/sap/ZG_CURSO_FIORI_EDSONCR_SRV/",
         "type": "OData",
         "settings": {
-          "annotations": [],
+          "annotations": ["annotation0"],
           "localUri": "localService/metadata.xml",
           "odataVersion": "2.0"
+        }
+      },
+      "annotation0": {
+        "type": "ODataAnnotation",
+        "uri": "localService/annotation0.xml",
+        "settings": {
+            "localUri": "localService/annotation0.xml"
         }
       }
     }
@@ -72,7 +79,9 @@
       "": {
         "dataSource": "mainService",
         "preload": true,
-        "settings": {}
+        "settings": {
+          "useBatch": false
+        }
       }
     },
     "resources": {
@@ -99,6 +108,12 @@
           "target": [
             "TargetView1"
           ]
+        },{
+          "name" : "RouteDetalhe",
+          "pattern": "Detalhe/{id}",
+          "target": [
+            "TargetDetalhe"
+          ]
         }
       ],
       "targets": {
@@ -108,6 +123,13 @@
           "clearControlAggregation": false,
           "viewId": "View1",
           "viewName": "View1"
+        },
+        "TargetDetalhe": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Detalhe",
+          "viewName": "Detalhe"
         }
       }
     },
