@@ -35,30 +35,17 @@
                     <PropertyRef Name="Usuario"/>
                 </Key>
                 <Property Name="Email" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:label="Email"/>
-                <Property Name="Cep" Type="Edm.String" Nullable="false" MaxLength="50" sap:unicode="false" sap:label="Comentário" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Cep" Type="Edm.String" Nullable="false" MaxLength="50" sap:unicode="false" sap:label="CEP"/>
                 <Property Name="Usuario" Type="Edm.String" Nullable="false" MaxLength="50" sap:unicode="false" sap:label="Usuário"/>
-                <Property Name="Endereco" Type="Edm.String" Nullable="false" MaxLength="50" sap:unicode="false" sap:label="Comentário" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Endereco" Type="Edm.String" Nullable="false" MaxLength="50" sap:unicode="false" sap:label="Endereço"/>
                 <Property Name="Nome" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:label="Nome"/>
-                <Property Name="Bairro" Type="Edm.String" Nullable="false" MaxLength="50" sap:unicode="false" sap:label="Comentário" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Bairro" Type="Edm.String" Nullable="false" MaxLength="50" sap:unicode="false" sap:label="Bairro"/>
                 <Property Name="ProjetoSegw" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:label="Projeto SEGW"/>
-            </EntityType>
-            <EntityType Name="ZshHelpAlunoEc" sap:content-version="1">
-                <Key>
-                    <PropertyRef Name="Usuario"/>
-                </Key>
-                <Property Name="Usuario" Type="Edm.String" Nullable="false" MaxLength="50" sap:unicode="false" sap:label="Comentário" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
-                <Property Name="Nome" Type="Edm.String" Nullable="false" MaxLength="50" sap:unicode="false" sap:label="Comentário" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
-                <Property Name="ProjetoSegw" Type="Edm.String" Nullable="false" MaxLength="50" sap:unicode="false" sap:label="Comentário" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
-                <Property Name="Email" Type="Edm.String" Nullable="false" MaxLength="50" sap:unicode="false" sap:label="Comentário" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
-                <Property Name="Cep" Type="Edm.String" Nullable="false" MaxLength="50" sap:unicode="false" sap:label="Comentário" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
-                <Property Name="Endereco" Type="Edm.String" Nullable="false" MaxLength="50" sap:unicode="false" sap:label="Comentário" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
-                <Property Name="Bairro" Type="Edm.String" Nullable="false" MaxLength="50" sap:unicode="false" sap:label="Comentário" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
             </EntityType>
             <EntityContainer Name="ZG_CURSO_FIORI_EDSONCR_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
                 <EntitySet Name="SubscriptionCollection" EntityType="ZG_CURSO_FIORI_EDSONCR_SRV.Subscription" sap:content-version="1"/>
                 <EntitySet Name="NotificationCollection" EntityType="ZG_CURSO_FIORI_EDSONCR_SRV.Notification" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:addressable="false" sap:content-version="1"/>
                 <EntitySet Name="AlunosFioriEDSONCRSet" EntityType="ZG_CURSO_FIORI_EDSONCR_SRV.AlunosFioriEDSONCR" sap:searchable="true" sap:requires-filter="true" sap:content-version="1"/>
-                <EntitySet Name="ZshHelpAlunoEcSet" EntityType="ZG_CURSO_FIORI_EDSONCR_SRV.ZshHelpAlunoEc" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
             </EntityContainer>
             <atom:link rel="self" href="https://SAPFIORIEXED:44300/sap/opu/odata/sap/ZG_CURSO_FIORI_EDSONCR_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
             <atom:link rel="latest-version" href="https://SAPFIORIEXED:44300/sap/opu/odata/sap/ZG_CURSO_FIORI_EDSONCR_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
