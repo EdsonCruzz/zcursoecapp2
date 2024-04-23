@@ -184,7 +184,7 @@ sap.ui.define([
 
             acessaGitHub: function () {
                 let URLHelper = MLibrary.URLHelper;
-                URLHelper.redirect("https://github.com/EdsonCruzz/zcursoecapp1", true);
+                URLHelper.redirect("https://github.com/EdsonCruzz/zcursoecapp2", true);
             },
 
             onDeleta: function () {

@@ -240,7 +240,7 @@ sap.ui.define([
 
             onAdciona: function () {
                 if (!this.adicionar) {
-                    this.adicionar = sap.ui.xmlfragment("zcursoecapp2.view.fragmentos.Adicionar", this);
+                    this.adicionar = sap.ui.xmlfragment("zcursoecapp2.webapp.view.fragmentos.Adicionar", this);
                     this.getView().addDependent(this.adicionar);
                 }
                 // open value help dialog filtered by the input value
